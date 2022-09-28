@@ -98,3 +98,7 @@ img.foot{
     right: 0;
     width: 30vw;
 }
+
+p.spacing{
+    height: 100vh;
+}
