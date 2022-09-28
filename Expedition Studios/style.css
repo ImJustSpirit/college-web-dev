@@ -100,5 +100,20 @@ img.foot{
 }
 
 p.spacing{
-    height: 100vh;
+    height: 85vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10vw;
+    padding: 5vw;
+}
+
+.grid-container > div {
+    padding: 20px 0px;
+    text-justify: distribute;
+    background-color: #221f1f;
+    text-align: center;
+    border-radius: 10px;
 }
