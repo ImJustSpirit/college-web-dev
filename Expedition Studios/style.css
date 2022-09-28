@@ -1,0 +1,94 @@
+body{
+    background-color: black;
+    color: azure;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.splash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    z-index: 200;
+    text-align: center;
+    line-height: 100vh;
+}
+
+.splash.display-none{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    z-index: -10;
+    text-align: center;
+    line-height: 100vh;
+    transition: all 0.5s;
+}
+
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+div.nav{
+    position: sticky;
+    top: 0;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li.nav {
+    float: left;
+}
+
+li.nav a {
+    display: block;
+    color: azure;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li.nav a:hover {
+    background-color: #221f1f;
+}
+
+div.fs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    line-height: 100vh;
+    z-index: -1;
+    opacity: 15%;
+    font-size: 128px;
+}
+
+div.cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
