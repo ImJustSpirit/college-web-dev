@@ -106,7 +106,7 @@ p.spacing{
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    column-gap: 10vw;
+    column-gap: 5vw;
     padding: 5vw;
 }
 
