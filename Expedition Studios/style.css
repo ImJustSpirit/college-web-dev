@@ -92,3 +92,9 @@ div.cover {
     height: 100vh;
     z-index: 0;
 }
+
+img.foot{
+    position: absolute;
+    right: 0;
+    width: 30vw;
+}
