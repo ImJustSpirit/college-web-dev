@@ -42,7 +42,7 @@ body{
     animation: fadeIn 1s ease-in forwards;
 }
 
-div.nav{
+nav{
     position: sticky;
     top: 0;
 }
