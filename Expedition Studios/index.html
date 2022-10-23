@@ -20,6 +20,21 @@
             <li class="nav"><a href="projects.html">Projects</a></li>
             <li class="logo" style="float:right"><img src="Assets/Logos/Logo_W.svg" alt="Logo" height=47px></li>
         </ul>
+        <div class="navigation">
+            <div class="toggle"><span></span></div>
+            <ul class="smallNav">
+                <li style="--i:0;"><a href="#">Home</a></li>
+                <li style="--i:1;"><a href="#">About</a></li> 
+                <li style="--i:2;"><a href="#">Projects</a></li>
+            </ul>
+        </div>
+        <script>
+            let navigation = document.querySelector('.navigation');
+            document.querySelector('.toggle').onclick = function(){
+                this.classList.toggle('active')
+                navigation.classList.toggle('active')
+            }
+        </script>
     </nav>
     <div class="fs">Hello World</div>
     <p class="spacing"></p>
