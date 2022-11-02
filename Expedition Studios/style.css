@@ -99,7 +99,7 @@ li.nav a:hover {
     left: 0;
     width: 100%;
     height: 50px;
-    background: #221f1f;
+    background: #262626;
     cursor: pointer;
     display: flex;
     justify-content: flex-end;
@@ -184,7 +184,7 @@ ul.smallNav li a {
     display: block;
     padding: 10px 20px;
     height: 50px;
-    background: #221f1f;
+    background: #262626;
     color: azure;
     transition: 0.5s;
 }
