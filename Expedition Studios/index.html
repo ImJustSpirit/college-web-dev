@@ -7,6 +7,7 @@
     <title>Expedition Studios</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="Assets/Logos/Logo_W_B.svg">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <div class="cover"></div>
@@ -15,17 +16,19 @@
     </div>
     <nav>
         <ul class="nav">
-            <li class="nav"><a href="index.html">Home</a></li>
-            <li class="nav"><a href="about.html">About</a></li>
-            <li class="nav"><a href="projects.html">Projects</a></li>
-            <li class="logo" style="float:right"><img src="Assets/Logos/Logo_W.svg" alt="Logo" height=47px></li>
+            <li class="nav"><a href="#">Home</a></li>
+            <li class="nav"><a href="#">About</a></li>
+            <li class="nav"><a href="#">Projects</a></li>
+            <li class="logo" style="float:right;"><img src="Assets/Logos/Logo_W.svg" alt="Logo" height=47px></li>
+            <li class="nav" onclick="login();"><a href="#">Login</a></li>
         </ul>
         <div class="navigation">
             <div class="toggle"><span></span></div>
             <ul class="smallNav">
                 <li style="--i:0;"><a href="#">Home</a></li>
-                <li style="--i:1;"><a href="#">About</a></li> 
+                <li style="--i:1;"><a href="#">About</a></li>
                 <li style="--i:2;"><a href="#">Projects</a></li>
+                <li style="--i:3;"><a href="#">Login</a></li>
             </ul>
         </div>
         <script>
