@@ -1,0 +1,200 @@
+*{
+    --main: #E6AF63;
+    --secondary: #FFD497;
+    --tertiary: #806137;
+    font-family: 'Mali', cursive;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--tertiary);
+}
+
+body{
+    background-color: var(--main);
+}
+
+/*====={Phone Navigation Bar}=====*/
+.navigation {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 20px;
+    width: 100vw;
+    z-index: 100;
+}
+
+.toggle {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: var(--tertiary);
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--secondary);
+    padding: 5px 20px;
+}
+
+.toggle::before {
+    content: 'Menu';
+    margin-right: 10px;
+
+}
+
+.toggle.active::before {
+    content: 'Close';
+}
+
+.toggle span {
+    position: relative;
+    width: 20px;
+    height: 50px;
+}
+
+.toggle span::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--secondary);
+    transition: 0.5s;
+}
+
+.toggle span::after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--secondary);
+    transition: 0.5s;
+}
+
+.toggle.active span::before {
+    transform: rotate(-135deg);
+    top: 24px;
+    background: var(--main);
+}
+
+.toggle.active span::after {
+    transform: rotate(135deg);
+    bottom: 24px;
+    background: var(--main);
+}
+
+ul.smallNav {
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+ul.smallNav li {
+    position: relative;
+    list-style: none;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-250px);
+    transition-delay: calc(0.1s * var(--i));
+}
+
+.navigation.active ul.smallNav li {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+ul.smallNav li a {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    height: 50px;
+    background: var(--tertiary);
+    color: var(--secondary);
+    transition: 0.5s;
+}
+
+ul.smallNav li :hover {
+    background: var(--secondary);
+    color: var(--tertiary);
+    transition: 0s;
+}
+/*Section End*/
+
+.blob{
+    background-color: var(--secondary);
+    border-radius: 10px;
+    margin: 5vw;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    padding: 10px;
+    text-align: center;
+}
+
+h1{
+    color: #EBB031;
+    font-weight: 600;
+    font-size: 10vw;
+}
+
+h2{
+    font-size: 6vw;
+}
+
+h3{
+    font-size: 4vw;
+}
+
+button{
+    background-color: var(--tertiary);
+    color: var(--secondary);
+    border-radius: 10px;
+    margin: 1vh;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    border-style: none;
+    font-size: 4vw;
+}
+
+p{
+    font-weight: 600;
+    text-align: center;
+    font-size: 8vw;
+    margin-bottom: 0;
+}
+
+.blob-grid{
+    display: grid;
+    background-color: var(--secondary);
+    border-radius: 10px;
+    margin: 5vw;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    padding: 10px;
+    text-align: center;
+    grid-template-columns: auto;
+}
+
+.blob-grid img{
+    width: 10vh;
+    float: left;
+}
+
+.blob-grid div{
+    background-color: var(--main);
+    border-radius: 10px;
+    margin: 2vw;
+    padding: 10px;
+    text-align: center;
+}

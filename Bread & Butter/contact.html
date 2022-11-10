@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bread & Butter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="navigation">
+            <div class="toggle"><span></span></div>
+            <ul class="smallNav">
+                <li style="--i:0;"><a href="index.html">Home</a></li>
+                <li style="--i:1;"><a href="about.html">About</a></li>
+                <li style="--i:2;"><a href="contact.html">Contact</a></li>
+                <li style="--i:3;"><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </div>
+        <script>
+            let navigation = document.querySelector('.navigation');
+            document.querySelector('.toggle').onclick = function(){
+                this.classList.toggle('active')
+                navigation.classList.toggle('active')
+            }
+        </script>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <p>Contact Us!</p>
+    <div class="blob">
+        Email : Bread&buter@outlook.com<br><br>
+        Mob: 0191 9284729<br><br>
+        Address: 1 Bakery Lane, Newcastle upon Tyne, NE78 1HG. 
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
